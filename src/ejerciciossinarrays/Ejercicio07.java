@@ -26,10 +26,7 @@ public class Ejercicio07 {
 
 		// Bucle para mostrar la temepratura media de cada mes
 		for (int i = 0; i < media.length; i++) {
-			System.out.print(meses[i] + ": \t");
-			if(i<7&&i!=1) {
-				System.out.print("\t");
-			}
+			System.out.print(meses[i] + ":    \t");
 			for (int j = 0; j<media[i];j++) {
 				System.out.print("[]");
 			}
