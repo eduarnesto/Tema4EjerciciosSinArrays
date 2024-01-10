@@ -28,12 +28,12 @@ public class Ejercicio06 {
 		}
 
 		// Bucle para mostrar los números de la tabla de uno en uno indicando si son pares
-		for (int i = 0; i < tabla.length; i++) {
+		for (int pos : tabla) {
 			//Muestro el número
-			System.out.print("El número " + tabla[i] + " es ");
+			System.out.print("El número " + pos + " es ");
 			
 			//Compruebo si es par
-			if(tabla[i]%2 == 0) {
+			if(pos%2 == 0) {
 				System.out.println("par");
 			} else {
 				System.out.println("impar");

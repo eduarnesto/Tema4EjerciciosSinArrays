@@ -6,7 +6,7 @@ public class Ejercicio07 {
 
 	public static void main(String[] args) {
 		// Tabla para guardar los meses
-		String meses[] = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+		String meses[] = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
 
 		//Tabla para guardar las temperaturas medias
 		int media[] = new int[12];
@@ -26,9 +26,12 @@ public class Ejercicio07 {
 
 		// Bucle para mostrar la temepratura media de cada mes
 		for (int i = 0; i < media.length; i++) {
-			System.out.print(meses[i] + ": ");
+			System.out.print(meses[i] + ": \t");
+			if(i<7&&i!=1) {
+				System.out.print("\t");
+			}
 			for (int j = 0; j<media[i];j++) {
-				System.out.print("#");
+				System.out.print("[]");
 			}
 			System.out.println();
 		}

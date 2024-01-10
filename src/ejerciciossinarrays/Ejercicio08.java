@@ -26,12 +26,18 @@ public class Ejercicio08 {
 		//Leo del teclado
 		num = sc.nextInt();
 		
+		//Muestro en que posiciones esat el número introducido
+		System.out.print("El número aparece en las posiciones: ");
+		
 		//Busco la posion del numero en la tabla
 		for (int i=0; i < tabla.length; i++) {
 			if(num==tabla[i]) {
-				System.out.println("El número aparece en la posición: " + (i+1));
+				System.out.print((i+1) + " ");
 			}
 		}
+		
+		//Imprimo un salto de línea para mayor calidad
+		System.out.println();
 		
 		//Muestro la tabla
 		System.out.println(Arrays.toString(tabla));

@@ -15,10 +15,10 @@ public class Ejercicio05 {
 		double suma = 0;
 
 		// Variable para guardar el mínimo
-		double minimo;
+		double minimo=Double.MAX_VALUE;
 
 		// Variable para guardar el maximo
-		double maximo;
+		double maximo=Double.MIN_VALUE;
 
 		// Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
@@ -36,29 +36,21 @@ public class Ejercicio05 {
 			tabla[i] = num;
 		}
 
-		// Asigno el primer numero al maximo para luego compararlos con los demás para
-		// saber si es el mayor
-		maximo = tabla[0];
-
-		// Asigno el primer numero al minimo para luego compararlos con los demás para
-		// saber si es el menor
-		minimo = tabla[0];
-
 		// Bucle para mostrar los números de la tabla de uno en uno en orden inverso
-		for (int i = 0; i < tabla.length; i++) {
+		for (double pos : tabla) {
 			// Sumo los numeros que forman la tabla
-			suma += tabla[i];
+			suma += pos;
 
 			// Compruebo cual es el mayor número, si el numero es mayor que el valor que
 			// tiene el maximo es sustituido por el maximo
-			if (tabla[i] > maximo) {
-				maximo = tabla[i];
+			if (pos > maximo) {
+				maximo = pos;
 			}
 
 			// Compruebo cual es el menor número, si el numero es menor que el valor que
 			// tiene el minimo es sustituido por el minimo
-			if (tabla[i] < minimo) {
-				minimo = tabla[i];
+			if (pos < minimo) {
+				minimo = pos;
 			}
 
 		}

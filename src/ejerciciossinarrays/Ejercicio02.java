@@ -28,8 +28,8 @@ public class Ejercicio02 {
 		}
 
 		// Bucle para mostrar los números de la tabla de uno en uno
-		for (int i = 0; i < tabla.length; i++) {
-			System.out.println(tabla[i]);
+		for (double pos : tabla) {
+			System.out.println(pos);
 		}
 		
 		//Cierro el Scanner
