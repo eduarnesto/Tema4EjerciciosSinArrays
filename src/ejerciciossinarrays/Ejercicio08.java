@@ -21,7 +21,7 @@ public class Ejercicio08 {
 		}
 		
 		//Pregunto por un número
-		System.out.println("Introduzca un número:");
+		System.out.println("Introduzca un número entre 1 y 10:");
 		
 		//Leo del teclado
 		num = sc.nextInt();
